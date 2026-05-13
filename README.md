@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python: 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 
-[![Tests](https://github.com/YOUR_USERNAME/verifast/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/verifast/actions)
+[![Tests](https://github.com/ajie9988/verifast/actions/workflows/test.yml/badge.svg)](https://github.com/ajie9988/verifast/actions)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## ✨ Features
