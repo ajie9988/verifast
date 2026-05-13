@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verifast"
+version = "0.1.0"
+description = "Simple email and phone validator"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "verifast contributors" }]
+dependencies = []
+
+[tool.setuptools]
+packages = ["verifast", "verifast.data"]
+
+[tool.setuptools.package-data]
+"verifast.data" = ["*.json"]
