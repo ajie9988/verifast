@@ -15,3 +15,7 @@ def test_invalid_phone_too_short():
 
 def test_invalid_unknown_country():
     assert not is_valid_phone("2025550199", "zz")
+
+
+def test_valid_us_phone_with_00_prefix():
+    assert is_valid_phone("0012025550199", "us")

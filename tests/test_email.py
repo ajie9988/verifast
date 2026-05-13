@@ -15,3 +15,7 @@ def test_invalid_email_double_dot():
 
 def test_invalid_email_domain_hyphen_edges():
     assert not is_valid_email("user@-example.com")
+
+
+def test_invalid_email_domain_hyphen_end():
+    assert not is_valid_email("user@example-.com")

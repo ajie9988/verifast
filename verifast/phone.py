@@ -27,6 +27,6 @@ def is_valid_phone(phone: str, country: str = "us") -> bool:
     if not normalized.isdigit():
         return False
 
-    min_length = int(rules.get("min_length", 1))
+    min_length = int(rules.get("min_length", 7))
     max_length = int(rules.get("max_length", 15))
     return min_length <= len(normalized) <= max_length
