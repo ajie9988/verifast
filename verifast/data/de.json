@@ -1,0 +1,7 @@
+{
+    "country": "Germany",
+    "iso_code": "DE",
+    "country_code": "49",
+    "phone_regex": "^(\\+49|49|0)(15|16|17)[0-9]{8,9}$",
+    "example": "+49 151 12345678"
+}

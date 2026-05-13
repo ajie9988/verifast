@@ -1,0 +1,8 @@
+{
+    "country_name": "Indonesia",
+    "country_code": "62",
+    "phone_pattern": "^(\\+62|62|0)([2-9]{1}[0-9]{6,11})$",
+    "example": "+628123456789",
+    "min_length": 9,
+    "max_length": 15
+}
