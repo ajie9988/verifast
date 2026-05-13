@@ -19,3 +19,14 @@ def test_invalid_email_domain_hyphen_edges():
 
 def test_invalid_email_domain_hyphen_end():
     assert not is_valid_email("user@example-.com")
+
+
+def test_invalid_email_local_part_dot_edges():
+    assert not is_valid_email("user.@example.com")
+    assert not is_valid_email(".user@example.com")
+
+
+def test_invalid_email_length_limits():
+    assert not is_valid_email(f"{'a' * 65}@example.com")
+    long_domain = f"user@{('a' * 64 + '.') * 4}com"
+    assert not is_valid_email(long_domain)

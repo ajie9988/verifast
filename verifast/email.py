@@ -14,6 +14,8 @@ def is_valid_email(email: str) -> bool:
     local, domain = email.rsplit("@", 1)
     if len(local) > 64 or len(domain) > 255:
         return False
+    if local.startswith(".") or local.endswith("."):
+        return False
 
     labels = domain.split(".")
     return all(label and not label.startswith("-") and not label.endswith("-") for label in labels)

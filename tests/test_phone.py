@@ -19,3 +19,7 @@ def test_invalid_unknown_country():
 
 def test_valid_us_phone_with_00_prefix():
     assert is_valid_phone("0012025550199", "us")
+
+
+def test_valid_us_phone_with_bare_country_code():
+    assert is_valid_phone("12025550199", "us")
